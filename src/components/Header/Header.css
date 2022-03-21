@@ -1,0 +1,18 @@
+.nav-container{
+    background-color: #1C2B35;
+}
+
+nav{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.menus a{
+    text-decoration: none;
+    padding: 5px 15px;
+    color: white;
+}
