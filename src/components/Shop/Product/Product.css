@@ -22,7 +22,7 @@
 }
 
 .product-info-bottom{
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .product-info-bottom p{
@@ -37,8 +37,15 @@
     bottom: 0;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cart-btn:hover{
     background-color: orange;
+}
+
+.cart-btn p{
+    font-size: 16px;
 }
