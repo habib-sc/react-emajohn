@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import Product from './Product/Product';
 import './Shop.css';
 
@@ -18,6 +19,14 @@ const Shop = () => {
         setCart(newCart);
     }
 
+    let totalPrice = 0;
+    let totalShipping = 0;
+    for (const product of cart) {
+        totalPrice = totalPrice + product.price;
+        totalShipping = totalShipping + product.shipping;
+    }
+    const tax = parseFloat((totalPrice * 0.1).toFixed(2));
+
     return (
         <div className='shop-container'>
             <div className='product-container'>
@@ -31,8 +40,12 @@ const Shop = () => {
             </div>
 
             <div className="cart-container">
-                <h4>Order Summary</h4>
-                <p>Selected Items: {cart.length}</p>
+                <Cart 
+                cart={cart}
+                totalPrice={totalPrice}
+                totalShipping={totalShipping}
+                tax={tax}
+                ></Cart>
             </div>
         </div>
     );
