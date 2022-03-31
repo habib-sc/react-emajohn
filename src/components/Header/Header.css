@@ -1,5 +1,8 @@
 .nav-container{
     background-color: #1C2B35;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
 }
 
 nav{

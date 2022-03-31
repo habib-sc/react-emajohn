@@ -1,6 +1,11 @@
-.shop-container{
+.container-fluid{
+    width: 100%;
+}
+.container{
     display: grid;
     grid-template-columns: 4fr 1fr;
+    width: 1200px;
+    margin: 0 auto;
 }
 .product-container{
     margin: 0 auto;
@@ -10,5 +15,19 @@
     margin-top: 40px;
 }
 .cart-container{
-    background-color: #FF9900;
+    background-color: rgba(255, 153, 0, 0.3);
+    position: fixed;
+    right: 0px;
+    height: 100vh;
+    width: 350px;
+}
+.review-order-btn{
+    background-color: rgb(43 60 226 / 61%);
+    padding: 7px 5px;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
 }
