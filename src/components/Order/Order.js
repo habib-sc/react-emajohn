@@ -9,7 +9,7 @@ import OrderReviewItem from './OrderReviewItem/OrderReviewItem';
 
 const Order = () => {
     const [products, setProducts] = useProducts();
-    const [cart, setCart] = useCart(products);
+    const [cart, setCart] = useCart();
 
     const handleCartDelete = item => {
         const newCart = cart.filter(cartItem => cartItem._id !== item._id);
