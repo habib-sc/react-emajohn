@@ -22,7 +22,7 @@ const Header = () => {
                     <Link to="/inventory">Inventory</Link>
                     <Link to="/login">Login</Link>
                     {user &&
-                    <small style={{'margin-right': '10px', 'color': 'gray'}}>{user.email}</small>
+                    <small style={{'marginRight': '10px', 'color': 'gray'}}>{user.email}</small>
                     }
                     {user?
                         <button onClick={() => signOut(auth)}>Logout</button>
