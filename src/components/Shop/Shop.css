@@ -31,3 +31,29 @@
     color: white;
     cursor: pointer;
 }
+
+.pagiganion-container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0px;
+
+}
+
+.pagiganion-container select{
+    font-size: 18px;
+}
+
+.pagiganion-container .selected {
+    border: 2px solid orange;
+    color: orange;
+}
+
+.pagination-button{
+    margin-right: 10px;
+    border: 2px solid #FFE0B3;;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.pagination-button:hover{
+    border: 2px solid orange;
+}
